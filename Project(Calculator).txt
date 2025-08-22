@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Calculator {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first number : ");
+        float n1 = sc.nextFloat();
+        System.out.print("Enter another number : ");
+        float n2 = sc.nextFloat();
+        
+        System.out.print("Enter the operation['+','-','*','/'] : ");
+       char c = sc.next().charAt(0);
+       double Result = 0;
+        
+        switch(c) {
+            case '+':
+                System.out.println("Result " + (n1+n2));
+                break;
+            case '-':
+                System.out.println("Result " + (n1-n2));
+                break;
+            case '*':
+                System.out.println("Result " + (n1*n2));
+                break;
+            case '/':
+                if(n2!=0) {
+                System.out.println("Result " + (n1/n2));
+                } else {
+                    System.out.println("Error is not divisible.");
+                }
+                break;
+            default:
+                System.out.println("Not a character :");
+        }
+        sc.close();
+    }
+}
