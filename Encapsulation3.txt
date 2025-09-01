@@ -1,0 +1,29 @@
+class Student {
+    String name;
+    int age;
+    
+   public String getname() {
+       String name;
+   } 
+    public String getage() {
+       int age;
+   } 
+   
+   public void setname(String s) {
+       s = name;
+   }
+   
+   public void setage(int a) {
+       a = age;
+   }
+   void display() {
+       System.out.println("Student name is : " + getname());
+       System.out.println("Student age is : " + getage());
+   }
+   public static void main(String a[]) {
+       Student s = new Student();
+       name = s.setname("sks");
+       age = s.setage(20);
+       s.display();
+   }
+}
