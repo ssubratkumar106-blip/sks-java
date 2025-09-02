@@ -1,5 +1,5 @@
 class Student {
-    int count = 0;
+   static int count = 0;
     Student() {
         count++;
         System.out.println(count);
