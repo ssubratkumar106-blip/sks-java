@@ -87,11 +87,13 @@ class Soft extends Employee {
     public static void main(String args[]){
         void show() {
             System.out.println("hEllo java");
+             }
             Employee emp = new Employee();
             emp.set("sks");
             emp.display();
             emp.show();
-        }
+            
+     
     }
 }
 
