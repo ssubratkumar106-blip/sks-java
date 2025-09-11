@@ -5,6 +5,7 @@ class A {
     private void msg() {
         System.out.println("Hello");
     }
+    
 }
 public class B {
     public static void main(String a[]) {
